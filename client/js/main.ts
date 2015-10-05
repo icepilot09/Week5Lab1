@@ -2,7 +2,7 @@
 
 var myBlogApp = angular.module('myBlogApp', ['ngRoute', 'ngResource', 'myBlogApp.factories', 'myBlogApp.controllers']);
 
-myBlogApp.config(function ($routeProvider: ng.route.IRouteProvider) {
+myBlogApp.config(function ($routeProvider: any) {
     $routeProvider
         .when('/', {
             templateUrl: '../views/blogposts.html',

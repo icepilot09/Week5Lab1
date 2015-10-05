@@ -16,7 +16,7 @@ interface writeScope extends ng.IScope {
 }
 
 var myBlogApp = angular.module('myBlogApp.controllers', []);
-// GET
+
 myBlogApp.controller('blogController', ['$scope', '$location', 'Blog', function ($scope: IBlogScope, $location: ng.ILocationService, Blog: any) {
 
 	Blog.query()
@@ -27,7 +27,7 @@ myBlogApp.controller('blogController', ['$scope', '$location', 'Blog', function 
 	.catch(function () {
 		console.log('error');
 	});
-	// switches page view
+
 	$scope.createPost = function (): void {
 		$location.path('/newpost');
 	}
