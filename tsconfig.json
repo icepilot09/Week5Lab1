@@ -1,0 +1,25 @@
+{
+    "lintOptions": {
+        "rules": {}
+    },
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "watch": false
+    },
+    "filesGlob": [
+        "client/**/*.ts",
+        "server/**/*.ts",
+        "typings/tsd.d.ts"
+    ],
+    "files": [
+        "typings/tsd.d.ts",
+        "client/js/controller/blog.controller.ts",
+        "client/js/factory/blog.factory.ts",
+        "client/js/main.ts"
+    ]
+}
